@@ -1,4 +1,5 @@
 .beverage {
+    position: relative;
     border: 1px solid #eee;
     margin: 15px 0;
     padding: 15px;
@@ -43,5 +44,32 @@
     padding: 7px 15px;
     border: 2px solid orange;
     border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 45px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
 }
 
